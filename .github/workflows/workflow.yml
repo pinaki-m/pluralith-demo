@@ -60,7 +60,7 @@ jobs:
           terraform-path: "${{ env.working-directory }}/application"
 
   infracost:
-    name: Infracost
+    name: Run Infracost
     runs-on: ubuntu-latest
 
     env:
