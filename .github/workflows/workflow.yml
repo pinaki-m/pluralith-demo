@@ -24,6 +24,7 @@ jobs:
         # If you can't use this action, see Docker images in https://infracost.io/cicd
         with:
           api-key: ${{ secrets.INFRACOST_API_KEY }}
+          currency: ${{ secrets.INFRACOST_CURRENCY }}
 
       # Set up Terraform
       - name: Setup Terraform
@@ -87,6 +88,7 @@ jobs:
         # If you can't use this action, see Docker images in https://infracost.io/cicd
         with:
           api-key: ${{ secrets.INFRACOST_API_KEY }}
+          currency: ${{ secrets.INFRACOST_CURRENCY }}          
 
       # Checkout the base branch of the pull request (e.g. main/master).
       - name: Checkout base branch
