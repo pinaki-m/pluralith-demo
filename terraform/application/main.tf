@@ -99,3 +99,5 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
 #   cluster_type       = "single-node"
 # }
 
+
+
