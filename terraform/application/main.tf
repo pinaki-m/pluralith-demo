@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "pinaki_test"
+
+    workspaces {
+      name = "pluralith-demo"
+    }
+  }
+}
+
 provider "aws" {
   region = var.vpc_region
 }
