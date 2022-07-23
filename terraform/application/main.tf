@@ -90,7 +90,6 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
   }
 }
 
-
 # resource "aws_redshift_cluster" "example" {
 #   cluster_identifier = "tf-redshift-cluster"
 #   database_name      = "mydb"
@@ -99,3 +98,4 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
 #   node_type          = "dc1.large"
 #   cluster_type       = "single-node"
 # }
+
