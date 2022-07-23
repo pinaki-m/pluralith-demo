@@ -24,7 +24,7 @@ jobs:
         # If you can't use this action, see Docker images in https://infracost.io/cicd
         with:
           api-key: ${{ secrets.INFRACOST_API_KEY }}
-          
+
       # Set up Terraform
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
