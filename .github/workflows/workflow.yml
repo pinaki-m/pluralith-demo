@@ -10,7 +10,7 @@ jobs:
     name: Run Pluralith
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       # Set up AWS credentials (using the aws-actions/configure-aws-credentials action)
       - name: Configure AWS Credentials
