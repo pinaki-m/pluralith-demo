@@ -57,6 +57,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      working-directory: terraform
       TF_ROOT: "${{ env.working-directory }}/application"
       # If you're using Terraform Cloud/Enterprise and have variables or private modules stored
       # on there, specify the following to automatically retrieve the variables:
