@@ -1,3 +1,5 @@
+name: "Pluralith and Infracost"
+
 on: [pull_request]
 jobs:
   pluralith:
