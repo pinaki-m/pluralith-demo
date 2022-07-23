@@ -99,18 +99,14 @@ resource "aws_dynamodb_table" "example-dynamodb-table" {
     non_key_attributes = ["UserId"]
   }
 
-  tags = {
-    Name        = "dynamodb-table-1"
-    Environment = "production"
-  }
 }
 
-# resource "aws_redshift_cluster" "example-redshift-cluster" {
-#   cluster_identifier = "tf-redshift-cluster"
-#   database_name      = "mydb"
-#   master_username    = "exampleuser"
-#   master_password    = "Seriously9ow?!"
-#   node_type          = "dc1.large"
-#   cluster_type       = "single-node"
-# }
+resource "aws_redshift_cluster" "example-redshift-cluster" {
+  cluster_identifier = "tf-redshift-cluster"
+  database_name      = "mydb"
+  master_username    = "exampleuser"
+  master_password    = "Seriously9ow?!"
+  node_type          = "dc1.large"
+  cluster_type       = "single-node"
+}
 
