@@ -18,6 +18,14 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: ap-southeast-2
 
+      - name: Setup Infracost
+        uses: infracost/actions/setup@v2
+        # See https://github.com/infracost/actions/tree/master/setup for other inputs
+        # If you can't use this action, see Docker images in https://infracost.io/cicd
+        with:
+          api-key: ${{ secrets.INFRACOST_API_KEY }}
+          currency: ${{ secrets.INFRACOST_CURRENCY }}
+
       # Set up Terraform
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
@@ -53,7 +61,7 @@ jobs:
           terraform-path: "${{ env.working-directory }}/application"
 
   infracost:
-    name: Infracost
+    name: Run Infracost
     runs-on: ubuntu-latest
 
     env:
@@ -80,6 +88,7 @@ jobs:
         # If you can't use this action, see Docker images in https://infracost.io/cicd
         with:
           api-key: ${{ secrets.INFRACOST_API_KEY }}
+          currency: ${{ secrets.INFRACOST_CURRENCY }}          
 
       # Checkout the base branch of the pull request (e.g. main/master).
       - name: Checkout base branch

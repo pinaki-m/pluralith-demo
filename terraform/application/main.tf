@@ -46,7 +46,7 @@ module "vpc" {
   }]
 }
 
-resource "aws_dynamodb_table" "basic-dynamodb-table" {
+resource "aws_dynamodb_table" "example-dynamodb-table" {
   name           = "GameScores"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
@@ -90,4 +90,11 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
   }
 }
 
-
+# resource "aws_redshift_cluster" "example-redshift-cluster" {
+#   cluster_identifier = "tf-redshift-cluster"
+#   database_name      = "mydb"
+#   master_username    = "exampleuser"
+#   master_password    = "Seriously9ow?!"
+#   node_type          = "dc1.large"
+#   cluster_type       = "single-node"
+# }
