@@ -62,7 +62,7 @@ jobs:
         uses: Pluralith/actions/comment@v1.1.0
         with:
           terraform-path: "${{ env.working-directory }}/application"
-          behavior: delete-and-new
+          behavior: new
 
   infracost:
     name: Run Infracost
