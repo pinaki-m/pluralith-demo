@@ -1,3 +1,18 @@
+terraform {
+  cloud {
+    organization = "pinaki_test"
+
+    workspaces {
+      name = "pluralith-demo"
+    }
+  }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
 provider "aws" {
   region = var.vpc_region
 }
@@ -98,3 +113,4 @@ resource "aws_dynamodb_table" "example-dynamodb-table" {
 #   node_type          = "dc1.large"
 #   cluster_type       = "single-node"
 # }
+
