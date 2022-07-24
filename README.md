@@ -4,8 +4,12 @@ This project creates a pipeline using Github Actions and implements Infracost an
 **Following is an example of how the cost information looks** <br>
 The Infracost run of the pipeline adds information in the PR comments that provide a view of the change in cost estimates that the PR will make.
 
+<img width="930" alt="Infracost" src="https://user-images.githubusercontent.com/12571181/180637189-fdd14f68-ae39-4494-bed1-63874f594d8e.png">
+
 **Following is an example of how the infrastructure diagram looks**<br>
 The Pluralith run of the pipeline adds information in the PR comments that provide a view of the infrastructure changes that the PR will make and provides a view of the infrastructure's created, updated, destroyed, recreated, and drifted components. 
+
+<img width="960" alt="Pluralith" src="https://user-images.githubusercontent.com/12571181/180637202-eb88276d-4c6a-4a69-9a21-41f98e07e694.png">
 
 ## What accounts do you need?
 In order to run this solution you will need accounts in the following tools. For personal use in public repos all these are free of cost except AWS (if you are not using the free tier)
