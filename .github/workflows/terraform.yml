@@ -12,6 +12,7 @@ env:
 
 jobs:
   terraform:
+    needs: [infracost, pluralith]
     name: "Run Terraform"
     runs-on: ubuntu-latest
     env:
