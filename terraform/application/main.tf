@@ -101,12 +101,4 @@ module "vpc" {
 
 # }
 
-# resource "aws_redshift_cluster" "example-redshift-cluster" {
-#   cluster_identifier = "tf-redshift-cluster"
-#   database_name      = "mydb"
-#   master_username    = "exampleuser"
-#   master_password    = "Seriously9ow?!"
-#   node_type          = "dc1.large"
-#   cluster_type       = "single-node"
-# }
 
