@@ -78,7 +78,6 @@ jobs:
         run: terraform apply -auto-approve -input=false
         working-directory: "${{ env.working-directory }}/application"
 
-jobs:
   pluralith:
     needs: terraform
     runs-on: ubuntu-latest
