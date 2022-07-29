@@ -79,7 +79,7 @@ jobs:
   #       working-directory: "${{ env.working-directory }}/application"
 
   pluralith:
-    needs: terraform
+    # needs: terraform
     runs-on: ubuntu-latest
     env:
       working-directory: terraform
