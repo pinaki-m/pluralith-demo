@@ -101,5 +101,3 @@ resource "aws_dynamodb_table" "example-dynamodb-table" {
 
 }
 
-
-
