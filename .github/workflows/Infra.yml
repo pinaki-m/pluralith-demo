@@ -89,7 +89,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v1
 
-      # Set up AWS credentials (using the aws-actions/configure-aws-credentials action)
+      # Set up AWS credentials (using the aws-actions/configure-aws-credentials action) 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
