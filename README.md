@@ -11,6 +11,11 @@ The Pluralith run of the pipeline adds information in the PR comments that provi
 
 <img width="960" alt="Pluralith" src="https://user-images.githubusercontent.com/12571181/180637202-eb88276d-4c6a-4a69-9a21-41f98e07e694.png">
 
+**Following is an example of how the infrastructure diagram in the README section looks**<br>
+## Infrastructure Diagram
+[![Pluralith Run Status](https://api.pluralith.com/v1/docs/460944046/status)](https://pluralith.com)<br></br>[![Pluralith Last Diagram](https://api.pluralith.com/v1/docs/460944046/diagram)](https://app.pluralith.com/#/orgs/202246319/projects/460944046/runs)
+
+
 ## What accounts do you need?
 In order to run this solution you will need accounts in the following tools. For personal use in public repos all these are free of cost except AWS (if you are not using the free tier)
 
