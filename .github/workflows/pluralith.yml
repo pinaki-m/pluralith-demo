@@ -36,7 +36,7 @@ jobs:
           terraform_wrapper: false # This is recommended so the `terraform show` command outputs valid JSON
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-      - name: Sleep for 40 seconds
+      - name: Wait for the Terraform workflow
         run: sleep 40s
         shell: bash
 
