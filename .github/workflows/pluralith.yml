@@ -1,6 +1,7 @@
 name: "Pluralith"
 
-on: [pull_request]
+on:
+  pull_request:
 jobs:
   pluralith:
     runs-on: ubuntu-latest
@@ -34,7 +35,15 @@ jobs:
         with:
           terraform_wrapper: false # This is recommended so the `terraform show` command outputs valid JSON
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-          
+
+      - name: Wait for Terraform workflow to succeed
+        uses: lewagon/wait-on-check-action@v1.1.2
+        with:
+          ref: ${{ github.ref }}
+          check-name: 'Run Terraform'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 10
+
       # Init Terraform project
       - name: Terraform Init
         run: terraform init
